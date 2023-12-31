@@ -1,0 +1,43 @@
+body {
+    background-color: blue;
+    animation: colorChange 5s infinite;
+}
+
+@keyframes colorChange {
+    0% { background-color: blue; }
+    50% { background-color: red; }
+    100% { background-color: blue; }
+}
+
+.container {
+    text-align: center;
+    margin-top: 10vh; /* Уменьшил отступ сверху для "Розыска" */
+}
+
+.container h1 {
+    font-size: 3.5em; /* Увеличил размер шрифта для "Розыска" */
+    margin-bottom: 30px; /* Увеличил отступ снизу для заголовка */
+}
+
+.responsive-img {
+    width: 70%; /* Увеличил ширину изображения */
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 50px; /* Увеличил отступ снизу для изображения */
+}
+
+.button {
+    display: inline-block; /* Сделал кнопку инлайновым блоком для более красивого отображения */
+    padding: 15px 30px; /* Увеличил внутренние отступы */
+    font-size: 1.2em; /* Увеличил размер шрифта */
+    background-color: #f44336; /* Красный цвет фона */
+    color: white; /* Белый цвет текста */
+    border: none; /* Убрал границу */
+    border-radius: 5px; /* Закруглил углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
+
+.button:hover {
+    background-color: #d32f2f; /* Темнее красный цвет при наведении */
+}
